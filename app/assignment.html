@@ -1,0 +1,161 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: assignment
+---
+<div class="flex justify-between pt-3 pb-1.5">
+    <a href="#" class="flex justify-center pr-2">All (4)<span class="material-symbols-outlined text-primary">
+            expand_more
+        </span>
+    </a>
+    <span class="text-secondary text-xs">2 comments</span>
+</div>
+<div class="flex flex-wrap">
+    <ul class="w-[34.7%] flex flex-col">
+        <li class="border-x border-t border-secondary">
+            <a href="#" class="p-3 flex justify-between hover:bg-secondary-light focus:bg-secondary-light">
+                <div class="from-group">
+                    <span class="mb-1 block text-xs text-secondary-dark">Chapter Assignment 2</span>
+                    <p class="text-bold">Please check this file…</p>
+                </div>
+                <div class="text-right">
+                    <span class="mb-2 block text-xs">4 hrs ago</span>
+                    <span class="block text-xs text-secondary">Emily Wang</span>
+                </div>
+            </a>
+        </li>
+        <li class="border-x border-t border-secondary">
+            <a href="#" class="p-3 flex justify-between hover:bg-secondary-light focus:bg-secondary-light">
+                <div class="from-group">
+                    <span class="mb-1 block text-xs text-secondary-dark">Chapter Assignment 1</span>
+                    <p class="text-bold">My Homework</p>
+                </div>
+                <div class="text-right">
+                    <span class="mb-2 block text-xs">12 hrs ago</span>
+                    <span class="block text-xs text-secondary">David Xu</span>
+                </div>
+            </a>
+        </li>
+        <li class="border-x border-t border-secondary">
+            <a href="#" class="p-3 flex justify-between hover:bg-secondary-light focus:bg-secondary-light">
+                <div class="from-group">
+                    <span class="mb-1 block text-xs text-secondary-dark">Final Assignment</span>
+                    <p class="text-bold">Have a problem with this…</p>
+                </div>
+                <div class="text-right">
+                    <span class="mb-2 block text-xs">18 hrs ago</span>
+                    <span class="block text-xs text-secondary">Tony Wei</span>
+                </div>
+            </a>
+        </li>
+        <li class="border-x border-y border-secondary">
+            <a href="#" class="p-3 flex justify-between hover:bg-secondary-light focus:bg-secondary-light">
+                <div class="from-group">
+                    <span class="mb-1 block text-xs text-secondary-dark">Final Assignment</span>
+                    <p class="text-bold">Did I do it right?</p>
+                </div>
+                <div class="text-right">
+                    <span class="mb-2 block text-xs">19 hrs ago</span>
+                    <span class="block text-xs text-secondary">Christina Lin</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="w-[63.4%] ml-4 relative">
+        <div class="border border-secondary">
+            <div class="flex justify-between items-center bg-secondary-light border-b border-secondary p-3">
+                <div class="from-group">
+                    <span class="block text-third text-xs">Chapter Assignment 2 / HTML&CSS</span>
+                    <p class="text-bold">Please check this file for me, thanks!</p>
+                </div>
+                <div class="from-group">
+                    <a href="#" class="flex items-center">
+                        <span class="material-symbols-outlined">
+                            more_vert
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex pl-4 py-4 ">
+                <img src="./assets/images/emily.jfif" alt="Emily picture" class="rounded-full h-10 w-10">
+                <div class="pl-2">
+                    <p class="text-bold">Emily Wang</p>
+                    <span class="block text-xs text-secondary">10:38 AM (4 hours ago)</span>
+                </div>
+            </div>
+            <p class="ml-16 mr-8 mb-2 text-sm">Hi Teacher, the attached file is my homework of chapter
+                2. And here comes a question: Why in the following code the height of
+                the <span class="bg-secondary-light text-primary">div</span> is bigger than the height of
+                the <span class="bg-secondary-light text-primary">img</span> ? There is a gap below the image,
+                but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+            </p>
+            <button class="ml-16 my-4 btn bg-secondary-light">
+                <span class="material-symbols-outlined pr-2">
+                    attach_file
+                </span>
+                HW-2-David.zip
+            </button>
+            <span class="ml-16 mr-8 border-b border-secondary block"></span>
+            <div class="flex justify-between pl-4 py-4 mr-8">
+                <div class="flex">
+                    <img src="./assets/images/andy.jfif" alt="Emily picture" class="rounded-full h-10 w-10">
+                    <div class="pl-2">
+                        <p class="text-bold">Andy Chen (You)</p>
+                        <span class="block text-xs text-secondary">13:24 AM (1 hours ago)</span>
+                    </div>
+                </div>
+                <div class="flex gap-x-6">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            edit
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <p class="ml-16 mr-8 mb-2 pb-1.5 text-sm">
+                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                <br>
+                You can:
+                <br>
+                • adjust the <span class="bg-secondary-light text-primary">vertical-align</span> of the image 
+                to position it elsewhere (e.g. the <span class="bg-secondary-light text-primary">middle</span> ) or
+                <br>
+                • change the <span class="bg-secondary-light text-primary">display</span> so it isn’t inline.
+            </p>
+        </div>
+        <div class="flex justify-between mt-4">
+            <div class="flex items-center gap-x-6">
+                <a href="#"><span class="material-symbols-outlined">
+                    chevron_left
+                    </span>
+                </a>
+                <a href="#"><span class="material-symbols-outlined">
+                    chevron_right
+                    </span>
+                </a>
+            </div>
+            <div class="flex gap-4">
+                <button class="btn bg-white text-primary border border-primary">Mark as read</button>
+                <button class="js-reply btn bg-primary text-white">Reply</button>
+            </div>
+        </div>
+        <div class="js-textEditor absolute border hidden border-secondary top-[56%] left-0 w-full h-1/2 bg-white">
+            <textarea id="editor" class="border-0" placeholder="Reply an answer…">
+            </textarea>
+            <div class="flex justify-end gap-4 absolute button-2 right-0">
+                <button class="btn py-2 px-8 bg-white text-primary border border-primary">Cancel</button>
+                <button class="js-reply btn py-2 px-8 bg-primary text-white">Reply</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
